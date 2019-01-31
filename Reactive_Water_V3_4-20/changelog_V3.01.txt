@@ -1,0 +1,106 @@
+V3.01 31.01.2019
+
+Small Bugfixes:
+- pixelation effect changed to integer variable
+- placed some is valid nodes in GlobalUpdater_BP and WaterBody_BP to avoid errors and low fps when there is no player0
+- disabled scenecapture when player0 is not valid to avoid low fps when player0 is not valid
+
+
+
+V3.0 27.01.2019
+
+New Features:
+
+- now 3 demo levels
+- Player Local Simulation (only 1 single plane)
+- automatic water interaction as long as actor and component has tag "water" or "waterlocal"
+- Water interaction cause waves in shape of object
+- Water Simulation can be tweaked to massive distances
+- massive performance improvements
+- splashes on shallow water (calculated by character_BP)
+- water splash color based on actor tag of water body (red, green, blue)
+- Impact at location Function/Blueprint added
+- Rain at location Function/Blueprint added
+- Particle Rain Blueprint added
+- tesselation by distance and falloff option
+- Particle interaction
+- now only what touches water surface causes waves (precise edge)
+- over water and under water touch offset
+- increased water surface precision
+- interactive Water Jet (Press N)
+- spawn dynamic objects (Press B)
+- fake buoyancy (needs to add collision channel "BuoyancySurface" in project settings!)
+- under water post Process volume
+- char arm rotation influenced by water level (calculated by character_BP)
+- character speed influenced by water level (calculated by character_BP)
+- World Space Tiling of water surface
+- tiling in water body settings
+- yaw rotation is now properly possible
+- debuging components and exposed options
+- Render Target resolution and capture resolutions is now editable
+- wave orientation can now be set to up or downwards
+- object idle speed variable
+- an activation box with offset options
+- wave noise reduction option
+- pixelation effect
+- local planar reflection (needs to be support global clip plane in project settings checked)
+- rain around player option
+- basic caustics
+- self caustics
+- grass is influenced by waves
+
+
+Bugfixes:
+
+- fixed black debug planes in editor
+- fixed collision happening out of waterbounds
+
+Known issues:
+
+- impact and rain at location Impact Powers are the same for impacts at the very same moment
+- on lower simulation distances combined with high damping value random waves might appear
+- tessellated impacts height is sometimes not visible infront of translucent materials
+
+
+
+
+
+V2.1:
+04.12.2018
+
+
+Minor Bugfixes:
+
+- deleted unused variables
+- flipped calf and feet collision checkbox (now its correct)
+- decreased plane size in demo level for faster project startup
+
+
+V2:
+21.10.2018
+
+New Features:
+- framerate independant simulation
+- support multiple water plane actors with different materials and settings possible
+- water plane indicators in editor
+- improved performance
+
+
+Performance:
+
+- deactivated translucentcy on planar reflection + 25%fps
+- deactivated dynamic shadows on planar reflection + 5%fps
+- Blueprint communication overhaul
+- new settings for performance (tick rates for location and simulation
+- adjustable water tile size
+
+
+Materials:
+
+- UV Tiling is working now (but only with odd numbers 1,3,5...)
+- better material layout
+- emmissive is now optional
+- material adjustments for proper color settings
+- new subcategories for material instances
+
+
