@@ -9,9 +9,11 @@ Why is it free?
 - 1. I can't provide lifetime support
 - 2. I am no programmer and I may not be able to fix limitations or issues
 
-Important sidenote:
+Important Sidenotes:
 
 - use two sided materials for better simulation!!!
+- Hitches around every 60 seconds are cause by garbage collection and dont appear in packaged game
+- Hitches around every 2 seconds may appear at fixed framerates, unlimit fps to fix that
 
 check my channel for other projects ;)
 https://www.youtube.com/marvelmaster
